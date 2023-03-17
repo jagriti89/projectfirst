@@ -6,7 +6,7 @@ const route =require('./routes/route.js')
  app.use(bodyparser.json())
  app.use(bodyparser.urlencoded({extended:true}))
 
- mongoose.connect("mongodb+srv://DeeptirthaMukherjee:QYKI3k8QSKC4I7FZ@cluster1.khatgm1.mongodb.net/project1-db?retryWrites=true&w=majority",{
+ mongoose.connect("mongodb+srv://jagriti:Jaggu123@cluster0.nf3nfa7.mongodb.net/jaggu/blogmanagement",{
 useNewUrlParser:true
  })
 
