@@ -54,23 +54,33 @@ Add an authorisation implementation for the JWT token that validates the token b
 Make sure that only the owner of the blogs is able to edit or delete the blog. In case of unauthorized access return an appropirate error message. Testing (Self-evaluation During Development) To test these apis create a new collection in Postman named Project 1 Blogging Each api should have a new request in this collection Each request in the collection should be rightly named. Eg Create author, Create blog, Get blogs etc Each member of each team should have their tests in running state Refer below sample
 
 ## A Postman collection and request sample
-Response
-Successful Response structure 
+ Response
+ Successful Response structure 
 {
 status: true, data: {
 } }
 
-Error Response structure
-{ status: false, msg: "" } Collections
+ ## Error Response structure
+{
+status: false, msg: ""
+} 
+
+* Collections
 
 ## Blogs
 {
-"title": "How to win friends", "body": "Blog body", "tags": ["Book", "Friends", "Self help"], "category": "Book", "subcategory": ["Non fiction", "Self Help"], "published": false, "publishedAt": "", // if published is true publishedAt will have a date 2021-09-17T04:25:07.803Z "deleted": false, "deletedAt": "", // if deleted is true deletedAt will have a date 2021-09-17T04:25:07.803Z, "createdAt": "2021-09-17T04:25:07.803Z", "updatedAt": "2021-09-17T04:25:07.803Z", 
+"title": "How to win friends", 
+"body": "Blog body", 
+"tags": ["Book", "Friends", "Self help"], 
+"category": "Book", "subcategory": ["Non fiction", "Self Help"],
+"published": false, "publishedAt": "", // if published is true publishedAt will have a date 2021-09-17T04:25:07.803Z "deleted": false, "deletedAt": "",
+// if deleted is true deletedAt will have a date 2021-09-17T04:25:07.803Z, "createdAt": "2021-09-17T04:25:07.803Z", 
+"updatedAt": "2021-09-17T04:25:07.803Z", 
 }
 
 ## Successful Login Response structure
      { 
      status: true, data: { "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JJZCI6IjYyZmUzYmUzMzY2ZmFkNDZjY2Q1MzI3ZiIsImlhdCI6MTY2MDgzMDA4MywiZXhwIjoxNjYwODY2MDgzfQ.mSo-TLyRlGhMNcy4ftEvvIlCHlyEqpaFZc-iBth4lfg"
-
-} }
+}
+}
 Refer https://jsonplaceholder.typicode.com/guide/ for some fake blogs data. Note: Create a group database and use the same database in connection string by replacing `groupXDatabase
